@@ -1,0 +1,25 @@
+#search{
+    font-size: large;
+    padding: .3rem;
+    width: 40%;
+}
+
+.searchI{
+    position: absolute;
+    top: 5.5rem;
+    padding: .5rem;
+    background-color: white;
+}
+.searchI li{
+    display: block;
+}
+.searchI #link{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+}
+.searchI li:hover{
+    border-bottom: 1px solid blue;
+    width: fit-content;
+    padding: .1rem;
+}
