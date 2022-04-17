@@ -6,7 +6,8 @@
 
 .searchI{
     position: absolute;
-    top: 5.5rem;
+    top: 10.5rem;
+    left: 25rem;
     padding: .5rem;
     background-color: white;
 }
@@ -15,11 +16,9 @@
 }
 .searchI #link{
     text-decoration: none;
-    font-size: 1.2rem;
     color: black;
 }
 .searchI li:hover{
     border-bottom: 1px solid blue;
     width: fit-content;
-    padding: .1rem;
 }

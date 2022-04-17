@@ -1,11 +1,9 @@
 import React, { useContext } from 'react'
 import { GoogleLogin } from 'react-google-login';
-import { useNavigate } from 'react-router-dom';
 import { LoginContext } from '../../router/Routing';
 
 function Home() {
   const {userLogin,setUserLogin}=useContext(LoginContext)
-  const navigate=useNavigate()
 
   const responseGoogle = (response) => {
     
@@ -14,7 +12,6 @@ function Home() {
 
       localStorage.setItem('_wyzr_books_',JSON.stringify({name,email}))
       setUserLogin(true)
-      navigate('/search')
     }
   }
   return (

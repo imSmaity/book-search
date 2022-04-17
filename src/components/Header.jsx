@@ -1,16 +1,13 @@
 import React from 'react'
 import { useContext } from 'react';
 import { GoogleLogout } from 'react-google-login';
-import { useNavigate } from 'react-router-dom';
 import { LoginContext } from '../router/Routing';
 
 export default function Header() {
     const {userLogin,setUserLogin}=useContext(LoginContext)
-    const navigate=useNavigate()
 
     function logout(){
         localStorage.removeItem('_wyzr_books_')
-        navigate('/')
         setUserLogin(false)
     }
     return (

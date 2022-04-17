@@ -1,6 +1,5 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import BooksList from './BooksList'
 import './search.css'
 import SearchItems from './SearchItems'
 
@@ -46,8 +45,7 @@ function Search() {
   return (
     <div className='p-5'>
       <center><input type="search" id='search' placeholder='Search for books by title...' onChange={setSearchItems}/></center>
-      <BooksList data={data} loading={loading}/>
-      <SearchItems searchingItems={searchingItems} loading={loading}/>
+      <SearchItems searchingItems={searchingItems} loading={loading} searchData={searchData}/>
     </div>
   )
 }
