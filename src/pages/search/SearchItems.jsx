@@ -1,11 +1,14 @@
 import axios from 'axios'
 import React from 'react'
 import { Link } from 'react-router-dom'
+import History from './History'
 
 function SearchItems({searchingItems,loading,searchData}) {
+    const userData=JSON.parse(localStorage.getItem('_wyzr_books_'))
 
-    function searchDataStore(data){
-        axios.post('http://localhost:9000/',{searchItem:data, date:new Date()})
+    
+    function searchDataStore(data,id){
+        axios.post('http://localhost:9000/',{_id:userData.email,sData:{id,searchItem:data, date:new Date()}})
         .catch(err=>{
             console.error(err)
         })
@@ -14,22 +17,24 @@ function SearchItems({searchingItems,loading,searchData}) {
         <div className='searchI' >
             {
                 loading?
-                    searchingItems.length===0?
-                    <div id='link' >
-                        <div>Not match any books title.</div>
-                        <p>Suggestions: The first letter must use <b>K/T/S/W/G/H/P</b>.</p>
-                    </div>:
-                    <ul>
-                        {
-                            searchingItems.map((value)=>{
-                                return(
-                                    <li key={value.id}>
-                                        <Link to={`/book/${value.id}`} id='link' onClick={()=>searchDataStore(searchData)}>{value.volumeInfo.title}</Link>
-                                    </li>
-                                ) 
-                            })
-                        }
-                    </ul>:
+                    searchData!==''?
+                        searchingItems.length===0?
+                        <div id='link' >
+                            <div>Not match any books title.</div>
+                            <p>Suggestions: The first letter must use <b>K/T/S/W/G/H/P</b>.</p>
+                        </div>:
+                        <ul className='se'>
+                            {
+                                searchingItems.map((value)=>{
+                                    return(
+                                        <li key={value.id}>
+                                            <Link to={`/book/${value.id}`} id='link' onClick={()=>searchDataStore(value.volumeInfo.title,value.id)}>{value.volumeInfo.title}</Link>
+                                        </li>
+                                    ) 
+                                })
+                            }
+                        </ul>:
+                    <History/>:
                 <div>Loading...</div>
             }
             

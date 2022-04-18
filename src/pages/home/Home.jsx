@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { GoogleLogin } from 'react-google-login';
 import { LoginContext } from '../../router/Routing';
+import './home.css';
 
 function Home() {
   const {userLogin,setUserLogin}=useContext(LoginContext)
@@ -15,7 +16,8 @@ function Home() {
     }
   }
   return (
-    <div className='p-2'>
+    <div className='p-2 login'>
+      <h3 className='mb-4'>Log in to your account</h3>
       {
         !userLogin&&
         <GoogleLogin

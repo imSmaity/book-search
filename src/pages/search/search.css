@@ -18,7 +18,13 @@
     text-decoration: none;
     color: black;
 }
-.searchI li:hover{
+.searchI .se li:hover{
     border-bottom: 1px solid blue;
     width: fit-content;
+}
+#link2{
+    color: purple;
+}
+#link2:hover{
+    color:black;
 }
