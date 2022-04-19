@@ -1,3 +1,39 @@
+# Google Book Search
+A online book search web app made with MERN stack.
+## Overview
+Some days are complete work then completed this beautiful task. I'm winning huge motivation through this great project. If you think about why we use this app? I think before the buy or reading any book it's great to read some details about the book and I'm sure my app SEO is very helpful for this.
+
+Entering the home page and you see the login page, yes login is mandatory for free to feel this app journey. Complete your login process then nice. Don't worry, my app redirects to the 'search' page. Hopefully, you entered the 'search' page then you search the book and click on the book title. My app views some details of the book.
+
+
+## Tech Stack
+- Front-end
+  - HTML
+  - CSS
+  - Bootstrap
+  - JavaScript
+  - ReactJS
+- Back-end 
+  - node.js
+  - express.js
+- Database
+  - MongoDB
+## Api 
+   - [Google Books API](https://www.googleapis.com/books/v1/volumes?q=search+terms)
+
+## Deploy Link
+ - Open Live Demo [here](https://main.dgcsnl0vn3tj0.amplifyapp.com/)
+
+## Helpful Links
+ - Backend of this project can be found [here](https://github.com/imSmaity/book-search-server) 
+ - Google Sign-In APIs [here](https://developers.google.com/identity/sign-in/web/sign-in)
+ - Mongoose query found [here](https://mongoosejs.com/docs/queries.html)
+ - AWS Amplify [here](us-east-1.console.aws.amazon.com)
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -29,42 +65,3 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
