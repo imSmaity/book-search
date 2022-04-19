@@ -23,9 +23,9 @@ function History() {
             }
             <ul>
                 {
-                    history.map((value)=>{
+                    history.map((value,i)=>{
                         return(
-                            <li key={value.id}>
+                            <li key={i}>
                                 <Link to={`/book/${value.id}`} id='link2'>{value.searchItem}</Link>
                             </li>
                         ) 

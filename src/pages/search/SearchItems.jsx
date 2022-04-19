@@ -8,8 +8,9 @@ function SearchItems({searchingItems,loading,searchData}) {
 
     
     function searchDataStore(data,id){
+
         const URL=process.env.REACT_APP_SERVER_URL
-        console.log(URL)
+
         axios.post(URL,{_id:userData.email,sData:{id,searchItem:data, date:new Date()}})
         .catch(err=>{
             console.error(err)
