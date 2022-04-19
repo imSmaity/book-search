@@ -9,7 +9,8 @@ function History() {
     const userData=JSON.parse(localStorage.getItem('_wyzr_books_'))
 
     useEffect(()=>{
-        axios.post('http://localhost:9000/history',{_id:userData.email})
+        const URL=process.env.REACT_APP_SERVER_URL
+        axios.post(URL+'history',{_id:userData.email})
         .then(res=>{
             setHistory(res.data)
         })
